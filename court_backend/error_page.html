@@ -1,0 +1,1234 @@
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="https://delhihighcourt.nic.in/app/public/ois/images/logo.png" type="image/png">
+	<title>High Court of Delhi</title>
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/material.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/glyphicons.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/owl.carousel.min.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/owl.theme.default.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/animate.css" rel="stylesheet">
+	<link href="https://delhihighcourt.nic.in/app/public/ois/css/style.css" rel="stylesheet">
+
+    <link href="https://delhihighcourt.nic.in/app/public/backend/css/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://delhihighcourt.nic.in/app/public/ois/css/jquery-ui.css">
+    <link href="https://delhihighcourt.nic.in/app/public/ois/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-----------------------------DataTable CSS---------------------->
+    <link rel="stylesheet" type="text/css" href="https://delhihighcourt.nic.in/app/public/ois/css/dataTables.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://delhihighcourt.nic.in/app/public/ois/css/buttons.dataTables.css">
+    <!-----------------------------DataTable CSS---------------------->
+
+    <style>
+        .bootom-quick-links-area .inner-title h4 {
+            font-size: 18px;
+            margin: 0;
+            font-family: "open_sansbold";
+            color: #314e9a;
+        }
+
+        .bootom-quick-links-area .inner-title h4:before {
+            top: 35%;
+            display: none;
+        }
+
+        .quick-ticker ul {
+            list-style: none;
+            padding: 0;
+            color: #fff;
+            margin-top: 15px !important;
+            display: flex;
+            gap: 30px;
+            margin-bottom: 0;
+        }
+
+        .quick-ticker li p {
+            margin: 0;
+            color: #000;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .quick-ticker li:before {
+            transition: all 450ms ease 0s;
+            -webkit-transition: all 450ms ease 0s;
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            height: 2px;
+            width: 0%;
+            background: #3857a1;
+        }
+
+        .quick-ticker li:hover:before {
+            transition: all 450ms ease 0s;
+            -webkit-transition: all 450ms ease 0s;
+            width: 100%;
+        }
+
+        .quick-ticker li p:before {
+            content: "\f0da";
+            position: absolute;
+            top: 3px;
+            left: 0;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: "Font Awesome 5 Free";
+        }
+
+        .quick-ticker li {
+            position: relative;
+        }
+
+        .quick-ticker li:hover a {
+            color: #37599f;
+        }
+
+        .bootom-quick-links-area {
+            margin-top: 5px;
+        }
+        .custom-swal-popup {
+            width: 300px !important;
+            height: auto !important;
+         }
+
+        .whole-page-overlay {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100% !important;
+            z-index: 9999;
+            display: none;
+        }
+
+        .whole-page-overlay .center-loader {
+            top: 50%;
+            left: 48%;
+            position: absolute;
+            color: white;
+        }
+
+    </style>
+
+
+
+
+
+<style>.swal2-popup.swal2-toast{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-align:center;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row}.swal2-popup.swal2-toast .swal2-title{-webkit-box-flex:1;flex-grow:1;-webkit-box-pack:start;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{-webkit-box-pack:start;justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 1.5em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:-webkit-box;display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;padding:.625em;overflow-x:hidden;-webkit-transition:background-color .1s;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{-webkit-box-align:start;align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{-webkit-box-align:start;align-items:flex-start;-webkit-box-pack:start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{-webkit-box-align:start;align-items:flex-start;-webkit-box-pack:end;justify-content:flex-end}.swal2-container.swal2-center{-webkit-box-align:center;align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{-webkit-box-align:center;align-items:center;-webkit-box-pack:start;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{-webkit-box-align:center;align-items:center;-webkit-box-pack:end;justify-content:flex-end}.swal2-container.swal2-bottom{-webkit-box-align:end;align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{-webkit-box-align:end;align-items:flex-end;-webkit-box-pack:start;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{-webkit-box-align:end;align-items:flex-end;-webkit-box-pack:end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:-webkit-box!important;display:flex!important;-webkit-box-flex:1;flex:1;align-self:stretch;-webkit-box-pack:center;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:-webkit-box!important;display:flex!important;-webkit-box-flex:1;flex:1;align-content:center;-webkit-box-pack:center;justify-content:center}.swal2-container.swal2-grow-column{-webkit-box-flex:1;flex:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{-webkit-box-align:center;align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{-webkit-box-align:start;align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{-webkit-box-align:end;align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:-webkit-box!important;display:flex!important;-webkit-box-flex:1;flex:1;align-content:center;-webkit-box-pack:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:-webkit-box;display:flex;z-index:1;flex-wrap:wrap;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;width:100%;margin:1.25em auto 0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.1)));background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.2)));background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-actions.swal2-loading .swal2-styled.swal2-confirm{box-sizing:border-box;width:2.5em;height:2.5em;margin:.46875em;padding:0;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{content:"";display:inline-block;width:15px;height:15px;margin-left:5px;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff}.swal2-styled{margin:.3125em;padding:.625em 2em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{-webkit-box-pack:center;justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar{position:absolute;bottom:0;left:0;width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;-webkit-box-pack:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;-webkit-transition:color .1s ease-out;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{-webkit-transform:none;transform:none;background:0 0;color:#f27474}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;-webkit-box-pack:center;justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;-webkit-transition:border-color .3s,box-shadow .3s;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-file::-webkit-input-placeholder,.swal2-input::-webkit-input-placeholder,.swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::-ms-input-placeholder,.swal2-input::-ms-input-placeholder,.swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-validation-message{display:none;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;-webkit-box-pack:center;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;-webkit-box-flex:1;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{-webkit-box-align:center;align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;width:2.5em;height:.4em;margin:0 -1px;background:#3085d6}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{-webkit-transition:none;transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}@-webkit-keyframes swal2-toast-show{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg)}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg)}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg)}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg)}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg)}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg)}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:stretch;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{-webkit-box-flex:1;flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{-webkit-box-pack:center;justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}</style><style>.swal2-popup.swal2-toast{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-align:center;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row}.swal2-popup.swal2-toast .swal2-title{-webkit-box-flex:1;flex-grow:1;-webkit-box-pack:start;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{-webkit-box-pack:start;justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 1.5em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:-webkit-box;display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;padding:.625em;overflow-x:hidden;-webkit-transition:background-color .1s;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{-webkit-box-align:start;align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{-webkit-box-align:start;align-items:flex-start;-webkit-box-pack:start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{-webkit-box-align:start;align-items:flex-start;-webkit-box-pack:end;justify-content:flex-end}.swal2-container.swal2-center{-webkit-box-align:center;align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{-webkit-box-align:center;align-items:center;-webkit-box-pack:start;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{-webkit-box-align:center;align-items:center;-webkit-box-pack:end;justify-content:flex-end}.swal2-container.swal2-bottom{-webkit-box-align:end;align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{-webkit-box-align:end;align-items:flex-end;-webkit-box-pack:start;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{-webkit-box-align:end;align-items:flex-end;-webkit-box-pack:end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:-webkit-box!important;display:flex!important;-webkit-box-flex:1;flex:1;align-self:stretch;-webkit-box-pack:center;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:-webkit-box!important;display:flex!important;-webkit-box-flex:1;flex:1;align-content:center;-webkit-box-pack:center;justify-content:center}.swal2-container.swal2-grow-column{-webkit-box-flex:1;flex:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{-webkit-box-align:center;align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{-webkit-box-align:start;align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{-webkit-box-align:end;align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:-webkit-box!important;display:flex!important;-webkit-box-flex:1;flex:1;align-content:center;-webkit-box-pack:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:-webkit-box;display:flex;z-index:1;flex-wrap:wrap;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;width:100%;margin:1.25em auto 0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.1)));background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.2)));background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-actions.swal2-loading .swal2-styled.swal2-confirm{box-sizing:border-box;width:2.5em;height:2.5em;margin:.46875em;padding:0;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{content:"";display:inline-block;width:15px;height:15px;margin-left:5px;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff}.swal2-styled{margin:.3125em;padding:.625em 2em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{-webkit-box-pack:center;justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar{position:absolute;bottom:0;left:0;width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;-webkit-box-pack:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;-webkit-transition:color .1s ease-out;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{-webkit-transform:none;transform:none;background:0 0;color:#f27474}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;-webkit-box-pack:center;justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;-webkit-transition:border-color .3s,box-shadow .3s;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-file::-webkit-input-placeholder,.swal2-input::-webkit-input-placeholder,.swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::-ms-input-placeholder,.swal2-input::-ms-input-placeholder,.swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-validation-message{display:none;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;-webkit-box-pack:center;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;-webkit-box-flex:1;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{-webkit-box-align:center;align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;width:2.5em;height:.4em;margin:0 -1px;background:#3085d6}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{-webkit-transition:none;transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}@-webkit-keyframes swal2-toast-show{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg)}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg)}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg)}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg)}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg)}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg)}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:stretch;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{-webkit-box-flex:1;flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{-webkit-box-pack:center;justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}</style></head>
+
+<body class="loaded">
+<div class="whole-page-overlay" id="whole_page_loader" style="display: none;">
+        <img class="center-loader" style="height:100px; color: #fff;" src="https://delhihighcourt.nic.in/app/public/spin.gif">
+    </div>
+    <header class="fixed">
+		<!-- Top Header Section End -->
+		<div class="top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 top-left-nav wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+						<ul>
+						  
+							<li><a href="https://delhihighcourt.nic.in/web/sitemap">Sitemap</a></li>
+							<li><a href="https://delhihighcourt.nic.in/web/contact-us">Contact</a></li>
+							<li><a href="https://delhihighcourt.nic.in/web/form/feedback">Feedback</a></li>
+							<li><a href="https://delhihighcourt.nic.in/web/faqs">FAQs</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 top-right-nav wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+						<ul>
+							<li><a href="#" class="hide skiptomain">Skip to Main Content</a></li>
+							<li><a class="hide" href="https://delhihighcourt.nic.in/web/screen-reader-access">Screen Reader Access</a></li>
+							<li class="text-size">
+								<a href="#">A+</a>
+								<a href="#">A</a>
+								<a href="#">A -</a>
+							</li>
+							<li class="text-size">
+								<a href="#" class="whitebg">A</a>
+								<a href="#" class="blackbg">A</a>
+							</li>
+							<li class="lang-select">
+							Hindi
+								<select class="form-control custom-lang-select">
+									<!--<option>English</option>-->
+									<option>Hindi</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Top Header Section End -->
+		<!-- Logo Section Header Start -->
+		<div class="logo-sec-wraper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 logo-sec wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+						<a class="logo-align" href="https://delhihighcourt.nic.in/web">
+							<div class="brand-img">
+								<img src="https://delhihighcourt.nic.in/app/public/ois/images/logo.png" alt="emblem">
+							</div>
+							<div class="brand-text">
+								<h4>High Court of Delhi</h4>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-8 main-menu-area wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+						<div class="nav-wraper">
+							<nav class="navbar navbar-expand-sm navbar-light custom-nav w-100 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="collapsibleNavbar">
+									<ul class="navbar-nav mr-auto">
+										<li class="nav-item">
+											<a href="https://delhihighcourt.nic.in/web">Home</a>
+										</li>
+										<li class="nav-item menuparent">
+											<a href="javascript:void(0)">Judges</a>
+											<ul class="sub-menu">
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/CJ_Sitting_Judges">Hon'ble Chief Justice &amp; Sitting Judges</a>
+
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/Honble-Judges-Appointed-as-the-Chief-Justices-of-India">Hon'ble Judges appointed as the Chief
+														Justice of India</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/Honble-Judges-Appointed-as-Judges-of-the-Supreme-Court-of-India">Hon'ble Judges appointed as Judge of
+														the Supreme Court of India</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/Former-Honble-Chief-Justices">Former Hon'ble Chief Justices</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/Former-Honble-Judges-Elevated-as-Chief-Justice-of-Other-High-Courts">Former Hon'ble Judges elevated as Chief
+														Justice of Other High Courts</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/former_judges">Former Hon'ble Judges</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/assets">Assets of Judges</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item menuparent">
+											<a href="javascript:void(0)">Administration</a>
+											<ul class="sub-menu">
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/committee">Hon'ble Committees</a>
+												</li>
+												<li class="item-list menuparent">
+													<a href="javascript:void(0)">Registrar</a>
+													<ul class="sub-menu">
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/sitting-registrars">Sitting Registrar</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/former-registrars">Former Registrar</a>
+														</li>
+													</ul>
+												</li>
+												<li class="item-list menuparent">
+													<a href="javascript:void(0)">Reports &amp; Publications</a>
+													<ul class="sub-menu">
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/reports-publications">Reports</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/publications">Publications</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/publications">Publications</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/case_clearance_rate">Case Clearance Rate</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/ecommittee_newsletter">Newsletter e-Committee</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/nominated-counsels/current">Nominated Counsel</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/senior-advocate-designation">Senior Advocate Designation</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item menuparent">
+											<a href="javascript:void(0)">e-Services</a>
+											<ul class="sub-menu">
+												<li class="item-list">
+													<a href="https://dhcefiling.nic.in/eFiling/">e-Filing</a>
+												</li>
+												<li class="item-list">
+													<a href="https://dhccaseinfo.nic.in/inspection/">e-Inspection</a>
+												</li>
+												<li class="item-list">
+													<a href="https://dhcrti.nic.in/RTI/index.action">e-RTI</a>
+												</li>
+												<li class="item-list">
+													<a href="https://dhccaseinfo.nic.in/ecopy/">e-True Copy</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/app/advocate-login">Advocate e-Diary</a>
+												</li>
+												<li class="item-list">
+													<!--<a href="https://delhihighcourt.nic.in/app/gatepass/register">e-Visitor Pass</a>-->
+								                  <a href="https://www.evisitordhc.gov.in/evisitordhcweb/">e-Visitor Pass</a>
+												</li>
+												<li class="item-list">
+													<a href="https://edhcr.nic.in/">e-DHCR</a>
+												</li>
+												<li class="item-list">
+													<a href="http://35.207.227.0/index.html">e-Museum</a>
+												</li>
+												<li class="item-list">
+													<a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=4769239">Registration for Creche Facility</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item menuparent">
+											<a href="javascript:void(0)">Public Notices</a>
+											<ul class="sub-menu">
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/public-notice">General Notices</a>
+												</li>
+												<li class="item-list menuparent">
+													<a href="javascript:void(0)">Recruitment</a>
+													<ul class="sub-menu">
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/job-openings">Job Openings</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/recruitment-results-current">Recruitment Results</a>
+														</li>
+														<li class="item-list">
+															<a href="https://delhihighcourt.nic.in/web/previous-year-question-papers">Previous Years Question
+																Papers</a>
+														</li>
+													</ul>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/tenders">Tenders</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/online-forms-downloadable-forms">Forms &amp; Performas</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/company_claim/current">Company Claims &amp; Sales Notices</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/citizen-charter">Citizen Charter</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/form/feedback">Give Your feedback</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item menuparent">
+											<a href="javascript:void(0)">Rules &amp; Guidelines</a>
+											<ul class="sub-menu">
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/e-filing">e-Filing Rules</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/vc-rules">VC Rules</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/live-streaming-rules">Live Streaming Rules</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/notifications-practice-directions">Notifications &amp; Practice Directions</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/court-rules">Court Rules</a>
+												</li>
+												<li class="item-list">
+													<a href="https://delhihighcourt.nic.in/web/rti-disclosure-rules">RTI Disclosure &amp; Rules</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item">
+											<a href="javascript:void(0)" id="search-icon">
+												<i class="fa fa-search" aria-hidden="true" id="search-icon-img"></i>
+											</a>
+											<div id="search-box" class="search-box">
+												<input type="text" placeholder="Search...">
+												<button type="button" class="yellow-btn">Search</button>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Logo Section Header End -->
+	</header>
+
+    
+<style>
+.captcha-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 3D effect on the captcha code */
+.captcha-code {
+    font-size: 1.5rem;
+    /* Larger font for visibility */
+    color: #d81b60;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(255, 255, 255, 0.7);
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.captcha-code:hover {
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale(1.1);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.9);
+}
+</style>
+<div class="breadcrum-area">
+	<div class="breadcrumb-title-sec">
+				<div class="breadcrumb-bg">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-10 col-lg-10">
+								<div class="breadcrumb-body-inner">
+									<div class="region region-breadcrumb">
+										<div id="block-delhihighcourt-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+											<nav aria-label="breadcrumb" class="bradurcum_custom">
+												<ol class="breadcrumb">
+													<li class="breadcrumb-item">
+														<a href="/">Home</a>
+													</li>
+													<li class="breadcrumb-item inactive">
+													<a href="#">CASE STATUS</a>
+													</li>
+													<li class="breadcrumb-item inactive">
+														<a href="#">CASE WISE</a>
+													</li>
+												</ol>
+											</nav>
+
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-2 col-lg-2">
+								<a href="javascript:void(0);" onclick="history.back();" class="btn quick-btn">Back</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+<div class="tabs-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="multistep_content">
+					<ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a href="https://delhihighcourt.nic.in/app/get-case-type-status" class="nav-link active"><img src="https://delhihighcourt.nic.in/app/public/ois/images/case-wise.png"> Case Wise</a>
+	</li>
+	<li class="nav-item">
+		<a href="https://delhihighcourt.nic.in/app/party-name-wise-status" class="nav-link"><img src="https://delhihighcourt.nic.in/app/public/ois/images/former-judges-wise.png"> Party Name</a>
+	</li>
+	
+	<li class="nav-item">
+		<a href="https://delhihighcourt.nic.in/app/advocate-name-wise-status" class="nav-link"><img src="https://delhihighcourt.nic.in/app/public/ois/images/former-judges-wise.png"> Advocate Name</a>
+	</li>
+	<li class="nav-item">
+		<a href="https://delhihighcourt.nic.in/app/diary-no-wise-status" class="nav-link"><img src="https://delhihighcourt.nic.in/app/public/ois/images/sitting-judges-wise.png"> Diary No</a>
+	</li>
+	
+	
+	
+	
+</ul>					<div class="tab-content">
+						<div class="tab-pane container active" id="menu1">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
+									<div class="form-group">
+										<label>Case Type:</label>
+										<select class="form-control" name="case_type" id="case_type">
+											<option value="">Select</option>
+																							<option value="ADMIN.REPORT">ADMIN.REPORT</option>
+																							<option value="ARB.A.">ARB.A.</option>
+																							<option value="ARB. A. (COMM.)">ARB. A. (COMM.)</option>
+																							<option value="ARB.P.">ARB.P.</option>
+																							<option value="BAIL APPLN.">BAIL APPLN.</option>
+																							<option value="CA">CA</option>
+																							<option value="CA (COMM.IPD-CR)">CA (COMM.IPD-CR)</option>
+																							<option value="C.A.(COMM.IPD-GI)">C.A.(COMM.IPD-GI)</option>
+																							<option value="C.A.(COMM.IPD-PAT)">C.A.(COMM.IPD-PAT)</option>
+																							<option value="C.A.(COMM.IPD-PV)">C.A.(COMM.IPD-PV)</option>
+																							<option value="C.A.(COMM.IPD-TM)">C.A.(COMM.IPD-TM)</option>
+																							<option value="CAVEAT(CO.)">CAVEAT(CO.)</option>
+																							<option value="CC(ARB.)">CC(ARB.)</option>
+																							<option value="CCP(CO.)">CCP(CO.)</option>
+																							<option value="CCP(REF)">CCP(REF)</option>
+																							<option value="CEAC">CEAC</option>
+																							<option value="CEAR">CEAR</option>
+																							<option value="CHAT.A.C.">CHAT.A.C.</option>
+																							<option value="CHAT.A.REF">CHAT.A.REF</option>
+																							<option value="CMI">CMI</option>
+																							<option value="CM(M)">CM(M)</option>
+																							<option value="CM(M)-IPD">CM(M)-IPD</option>
+																							<option value="C.O.">C.O.</option>
+																							<option value="CO.APP.">CO.APP.</option>
+																							<option value="CO.APPL.(C)">CO.APPL.(C)</option>
+																							<option value="CO.APPL.(M)">CO.APPL.(M)</option>
+																							<option value="CO.A(SB)">CO.A(SB)</option>
+																							<option value="C.O.(COMM.IPD-CR)">C.O.(COMM.IPD-CR)</option>
+																							<option value="C.O.(COMM.IPD-GI)">C.O.(COMM.IPD-GI)</option>
+																							<option value="C.O.(COMM.IPD-PAT)">C.O.(COMM.IPD-PAT)</option>
+																							<option value="C.O. (COMM.IPD-TM)">C.O. (COMM.IPD-TM)</option>
+																							<option value="CO.EX.">CO.EX.</option>
+																							<option value="CONT.APP.(C)">CONT.APP.(C)</option>
+																							<option value="CONT.CAS(C)">CONT.CAS(C)</option>
+																							<option value="CONT.CAS.(CRL)">CONT.CAS.(CRL)</option>
+																							<option value="CO.PET.">CO.PET.</option>
+																							<option value="C.REF.(O)">C.REF.(O)</option>
+																							<option value="CRL.A.">CRL.A.</option>
+																							<option value="CRL.L.P.">CRL.L.P.</option>
+																							<option value="CRL.M.C.">CRL.M.C.</option>
+																							<option value="CRL.M.(CO.)">CRL.M.(CO.)</option>
+																							<option value="CRL.M.I.">CRL.M.I.</option>
+																							<option value="CRL.O.">CRL.O.</option>
+																							<option value="CRL.O.(CO.)">CRL.O.(CO.)</option>
+																							<option value="CRL.REF.">CRL.REF.</option>
+																							<option value="CRL.REV.P.">CRL.REV.P.</option>
+																							<option value="CRL.REV.P.(MAT.)">CRL.REV.P.(MAT.)</option>
+																							<option value="CRL.REV.P.(NDPS)">CRL.REV.P.(NDPS)</option>
+																							<option value="CRL.REV.P.(NI)">CRL.REV.P.(NI)</option>
+																							<option value="C.R.P.">C.R.P.</option>
+																							<option value="CRP-IPD">CRP-IPD</option>
+																							<option value="C.RULE">C.RULE</option>
+																							<option value="CS(COMM)">CS(COMM)</option>
+																							<option value="CS(OS)">CS(OS)</option>
+																							<option value="CS(OS) GP">CS(OS) GP</option>
+																							<option value="CUSAA">CUSAA</option>
+																							<option value="CUS.A.C.">CUS.A.C.</option>
+																							<option value="CUS.A.R.">CUS.A.R.</option>
+																							<option value="CUSTOM A.">CUSTOM A.</option>
+																							<option value="DEATH SENTENCE REF.">DEATH SENTENCE REF.</option>
+																							<option value="DEMO">DEMO</option>
+																							<option value="EDC">EDC</option>
+																							<option value="EDR">EDR</option>
+																							<option value="EFA(COMM)">EFA(COMM)</option>
+																							<option value="EFA(OS)">EFA(OS)</option>
+																							<option value="EFA(OS)  (COMM)">EFA(OS)  (COMM)</option>
+																							<option value="EFA(OS)(IPD)">EFA(OS)(IPD)</option>
+																							<option value="EL.PET.">EL.PET.</option>
+																							<option value="ETR">ETR</option>
+																							<option value="EX.F.A.">EX.F.A.</option>
+																							<option value="EX.P.">EX.P.</option>
+																							<option value="EX.S.A.">EX.S.A.</option>
+																							<option value="FAO">FAO</option>
+																							<option value="FAO (COMM)">FAO (COMM)</option>
+																							<option value="FAO-IPD">FAO-IPD</option>
+																							<option value="FAO(OS)">FAO(OS)</option>
+																							<option value="FAO(OS) (COMM)">FAO(OS) (COMM)</option>
+																							<option value="FAO(OS)(IPD)">FAO(OS)(IPD)</option>
+																							<option value="GCAC">GCAC</option>
+																							<option value="GCAR">GCAR</option>
+																							<option value="GTA">GTA</option>
+																							<option value="GTC">GTC</option>
+																							<option value="GTR">GTR</option>
+																							<option value="I.A.">I.A.</option>
+																							<option value="I.P.A.">I.P.A.</option>
+																							<option value="ITA">ITA</option>
+																							<option value="ITC">ITC</option>
+																							<option value="ITR">ITR</option>
+																							<option value="ITSA">ITSA</option>
+																							<option value="LA.APP.">LA.APP.</option>
+																							<option value="LPA">LPA</option>
+																							<option value="MAC.APP.">MAC.APP.</option>
+																							<option value="MAT.">MAT.</option>
+																							<option value="MAT.APP.">MAT.APP.</option>
+																							<option value="MAT.APP.(F.C.)">MAT.APP.(F.C.)</option>
+																							<option value="MAT.CASE">MAT.CASE</option>
+																							<option value="MAT.REF.">MAT.REF.</option>
+																							<option value="MISC. APPEAL(PMLA)">MISC. APPEAL(PMLA)</option>
+																							<option value="OA">OA</option>
+																							<option value="OCJA">OCJA</option>
+																							<option value="O.M.P.">O.M.P.</option>
+																							<option value="O.M.P. (COMM)">O.M.P. (COMM)</option>
+																							<option value="OMP (CONT.)">OMP (CONT.)</option>
+																							<option value="O.M.P. (E)">O.M.P. (E)</option>
+																							<option value="O.M.P. (E) (COMM.)">O.M.P. (E) (COMM.)</option>
+																							<option value="O.M.P.(EFA)(COMM.)">O.M.P.(EFA)(COMM.)</option>
+																							<option value="O.M.P. (ENF.)">O.M.P. (ENF.)</option>
+																							<option value="OMP (ENF.) (COMM.)">OMP (ENF.) (COMM.)</option>
+																							<option value="O.M.P.(I)">O.M.P.(I)</option>
+																							<option value="O.M.P.(I) (COMM.)">O.M.P.(I) (COMM.)</option>
+																							<option value="O.M.P. (J) (COMM.)">O.M.P. (J) (COMM.)</option>
+																							<option value="O.M.P. (MISC.)">O.M.P. (MISC.)</option>
+																							<option value="O.M.P.(MISC.)(COMM.)">O.M.P.(MISC.)(COMM.)</option>
+																							<option value="O.M.P.(T)">O.M.P.(T)</option>
+																							<option value="O.M.P. (T) (COMM.)">O.M.P. (T) (COMM.)</option>
+																							<option value="O.REF.">O.REF.</option>
+																							<option value="RC.REV.">RC.REV.</option>
+																							<option value="RC.S.A.">RC.S.A.</option>
+																							<option value="RERA APPEAL">RERA APPEAL</option>
+																							<option value="REVIEW PET.">REVIEW PET.</option>
+																							<option value="RFA">RFA</option>
+																							<option value="RFA(COMM)">RFA(COMM)</option>
+																							<option value="RFA-IPD">RFA-IPD</option>
+																							<option value="RFA(OS)">RFA(OS)</option>
+																							<option value="RFA(OS)(COMM)">RFA(OS)(COMM)</option>
+																							<option value="RF(OS)(IPD)">RF(OS)(IPD)</option>
+																							<option value="RSA">RSA</option>
+																							<option value="SCA">SCA</option>
+																							<option value="SDR">SDR</option>
+																							<option value="SERTA">SERTA</option>
+																							<option value="ST.APPL.">ST.APPL.</option>
+																							<option value="STC">STC</option>
+																							<option value="ST.REF.">ST.REF.</option>
+																							<option value="SUR.T.REF.">SUR.T.REF.</option>
+																							<option value="TEST.CAS.">TEST.CAS.</option>
+																							<option value="TR.P.(C)">TR.P.(C)</option>
+																							<option value="TR.P.(C.)">TR.P.(C.)</option>
+																							<option value="TR.P.(CRL.)">TR.P.(CRL.)</option>
+																							<option value="VAT APPEAL">VAT APPEAL</option>
+																							<option value="W.P.(C)">W.P.(C)</option>
+																							<option value="W.P.(C)-IPD">W.P.(C)-IPD</option>
+																							<option value="WP(C)(IPD)">WP(C)(IPD)</option>
+																							<option value="W.P.(CRL)">W.P.(CRL)</option>
+																							<option value="WTA">WTA</option>
+																							<option value="WTC">WTC</option>
+																							<option value="WTR">WTR</option>
+																					</select>
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Case Number :" name="case_number" id="case_number">
+										<label for="name" class="form__label">Case Number :</label>
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
+									<div class="form-group">
+										<label>Year:</label>
+										<select class="form-control" name="case_year" id="case_year">
+											<option value="">Select</option>
+																							<option value="2025">2025</option>
+																							<option value="2024">2024</option>
+																							<option value="2023">2023</option>
+																							<option value="2022">2022</option>
+																							<option value="2021">2021</option>
+																							<option value="2020">2020</option>
+																							<option value="2019">2019</option>
+																							<option value="2018">2018</option>
+																							<option value="2017">2017</option>
+																							<option value="2016">2016</option>
+																							<option value="2015">2015</option>
+																							<option value="2014">2014</option>
+																							<option value="2013">2013</option>
+																							<option value="2012">2012</option>
+																							<option value="2011">2011</option>
+																							<option value="2010">2010</option>
+																							<option value="2009">2009</option>
+																							<option value="2008">2008</option>
+																							<option value="2007">2007</option>
+																							<option value="2006">2006</option>
+																							<option value="2005">2005</option>
+																							<option value="2004">2004</option>
+																							<option value="2003">2003</option>
+																							<option value="2002">2002</option>
+																							<option value="2001">2001</option>
+																							<option value="2000">2000</option>
+																							<option value="1999">1999</option>
+																							<option value="1998">1998</option>
+																							<option value="1997">1997</option>
+																							<option value="1996">1996</option>
+																							<option value="1995">1995</option>
+																							<option value="1994">1994</option>
+																							<option value="1993">1993</option>
+																							<option value="1992">1992</option>
+																							<option value="1991">1991</option>
+																							<option value="1990">1990</option>
+																							<option value="1989">1989</option>
+																							<option value="1988">1988</option>
+																							<option value="1987">1987</option>
+																							<option value="1986">1986</option>
+																							<option value="1985">1985</option>
+																							<option value="1984">1984</option>
+																							<option value="1983">1983</option>
+																							<option value="1982">1982</option>
+																							<option value="1981">1981</option>
+																							<option value="1980">1980</option>
+																							<option value="1979">1979</option>
+																							<option value="1978">1978</option>
+																							<option value="1977">1977</option>
+																							<option value="1976">1976</option>
+																							<option value="1975">1975</option>
+																							<option value="1974">1974</option>
+																							<option value="1973">1973</option>
+																							<option value="1972">1972</option>
+																							<option value="1971">1971</option>
+																							<option value="1970">1970</option>
+																							<option value="1969">1969</option>
+																							<option value="1968">1968</option>
+																							<option value="1967">1967</option>
+																							<option value="1966">1966</option>
+																							<option value="1965">1965</option>
+																							<option value="1964">1964</option>
+																							<option value="1963">1963</option>
+																							<option value="1962">1962</option>
+																							<option value="1961">1961</option>
+																							<option value="1960">1960</option>
+																							<option value="1959">1959</option>
+																							<option value="1958">1958</option>
+																							<option value="1957">1957</option>
+																							<option value="1956">1956</option>
+																							<option value="1955">1955</option>
+																							<option value="1954">1954</option>
+																							<option value="1953">1953</option>
+																							<option value="1952">1952</option>
+																							<option value="1951">1951</option>
+																					</select>
+									</div>
+								</div>
+							</div>
+							<!-- Captcha start -->
+							<div class="row">
+								<!-- <div class="col-12 col-sm-12 col-md-12 col-xl-3">
+									<div class="form-group">
+										<img src="https://delhihighcourt.nic.in/app/getCaptcha" alt="captcha"
+											class="captcha-image mr-4" id="captcha-image">
+											<a href="javascript:void(0)" id="reload-captcha"><i
+												class="fas fa-refresh mr-4"></i></a>
+											    <a href="javascript:void(0)" id="play-captcha-audio"><i class="fas fa-volume-up mr-4"></i></a>
+									</div>
+									<audio id="audio-captcha" style="display: none;">
+										<source src="https://delhihighcourt.nic.in/app/captchaAudio" type="audio/mpeg">
+										Your browser does not support the audio element.
+									</audio>
+								</div>
+								<div class="col-12 col-sm-12 col-md-12 col-xl-3">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="" name="captchaInput"
+											id="captchaInput">
+										<label for="name" class="form__label">Enter Captcha Code Here :</label>
+									</div>
+								</div> -->
+
+
+								<div class="col-12 col-sm-12 col-md-12 col-xl-3">
+                                    <div class="form-group">
+                                        <label id="cap" class="captcha-label mr-4">
+                                            <span id="captcha-code" class="captcha-code">1346</span>
+                                        </label>
+                                        <a href="javascript:void(0)" id="reload-captcha"><i class="fas fa-sync mr-4"></i></a>
+                                        <a href="javascript: playAudio();">
+                                            <i class="fas fa-volume-up mr-4"></i>
+                                        </a>
+                                    </div>
+                                    <audio id="myAudio">
+                                        <source src="" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <input type="hidden" name="randomid" id="randomid" value="1346">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-xl-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="" name="captchaInput" id="captchaInput">
+                                        <label for="name" class="form__label">Enter Captcha Code Here :</label>
+                                    </div>
+                                </div>
+
+
+							</div>
+							<!-- Captcha end -->
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
+									<!-- <a class="btn yellow-btn" href="javascript:void(0)" id="search">Submit</a> -->
+									<button class="btn yellow-btn" id="search">Submit</button>
+								</div>
+							</div>
+
+							<h5 id="pet_name"></h5>
+							<div class="table-responsive mt-4">
+								<div id="caseTable_wrapper" class="dt-container dt-empty-footer"><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-length"><select name="caseTable_length" aria-controls="caseTable" class="dt-input" id="dt-length-0"><option value="50">50</option><option value="100">100</option><option value="200">200</option><option value="-1">All</option></select><label for="dt-length-0"> entries per page</label></div></div><div class="dt-layout-cell dt-end "><div class="dt-search"><label for="dt-search-0">Search:</label><input type="search" class="dt-input" id="dt-search-0" placeholder="" aria-controls="caseTable"></div></div></div><div class="dt-layout-row dt-layout-table"><div class="dt-layout-cell "><div id="caseTable_processing" class="dt-processing" role="status" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div><table class="table table-hover table-bordered text-center dataTable" id="caseTable" style="width: 100%;" aria-describedby="caseTable_info"><colgroup><col data-dt-column="0" style="width: 88.2px;"><col data-dt-column="1" style="width: 280.3px;"><col data-dt-column="2" style="width: 256.35px;"><col data-dt-column="3" style="width: 235.15px;"></colgroup>
+									<thead>
+										<tr role="row"><th data-dt-column="0" rowspan="1" colspan="1" class="dt-orderable-none dt-ordering-asc" aria-sort="ascending" aria-label="S.No."><span class="dt-column-title">S.No.</span><span class="dt-column-order"></span></th><th data-dt-column="1" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Diary No. / Case No.[STATUS]: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Diary No. / Case No.[STATUS]</span><span class="dt-column-order"></span></th><th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Petitioner Vs. Respondent: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Petitioner Vs. Respondent</span><span class="dt-column-order"></span></th><th data-dt-column="3" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Listing Date / Court No.: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Listing Date / Court No.</span><span class="dt-column-order"></span></th></tr>
+									</thead>
+									<tbody><tr><td colspan="4" class="dt-empty">No data available in table</td></tr></tbody>
+								<tfoot></tfoot></table></div></div><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-info" aria-live="polite" id="caseTable_info" role="status">Showing 0 to 0 of 0 entries</div></div><div class="dt-layout-cell dt-end "><div class="dt-paging paging_full_numbers"><button class="dt-paging-button disabled first" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="First" data-dt-idx="first" tabindex="-1">«</button><button class="dt-paging-button disabled previous" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1">‹</button><button class="dt-paging-button disabled next" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Next" data-dt-idx="next" tabindex="-1">›</button><button class="dt-paging-button disabled last" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Last" data-dt-idx="last" tabindex="-1">»</button></div></div></div></div>
+								<div class="disclaimer">
+									<span style="text-align: justify;"><b class="text-primary"> Disclaimer :</b> The
+										content of this site is only for information purpose. Users are advised not to
+										depend on the information and use it for official purpose. Neither the High
+										Court of Delhi nor the National Informatics Centre , Ministry of Information
+										Technology, Government of India is responsible for any damages arising in
+										contract from the use of the content of this site.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+
+    <footer>
+		<!-- Important Links Section Start -->
+		<div class="important-links-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 important-links">
+						<ul>
+							<li>
+								<!--<a href="https://delhihighcourt.nic.in/app/gatepass/register">e-Visitor Pass</a>-->
+								<a href="https://www.evisitordhc.gov.in/evisitordhcweb/">e-Visitor Pass</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/e-library">e-Library</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/accessibility-services">Accessibility Services</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/e-seva-kendra">e-Sewa Kendra &amp; Accessiblity Helpline</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 important-links">
+						<ul>
+							<li>
+								<a href="https://delhihighcourt.nic.in/app/judgments-hindi">निर्णय हिंदी</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/online-forms-downloadable-forms">Forms &amp; Performas</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/summary-of-mps-mlas-pending-cases">Monthly Report on MPs/MLAs Cases in District Court</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web">Humour in Court</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 important-links">
+						<ul>
+							<li>
+								<a href="https://api.whatsapp.com/send/?phone=9112114450&amp;text=Hi&amp;type=phone_number&amp;app_absent=0"><img src="https://delhihighcourt.nic.in/app/public/ois/images/whatsapp.png"> WhatsApp Services</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/telephone_directory">Telephone Directory</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/web/live-streaming">Live Streaming</a>
+							</li>
+							<li>
+								<a href="https://delhihighcourt.nic.in/app/harassment">Sexual Harassment Complaints</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 footer-logo">
+						<a class="logo-align footer_logo" href="#">
+							<div class="brand-img">
+								<img src="https://delhihighcourt.nic.in/app/public/ois/images/logo-footer.png" alt="emblem">
+							</div>
+							<div class="brand-text">
+								<h4>High Court of Delhi</h4>
+							</div>
+						</a>
+						<div class="download-app-from">
+							<p>Download App From</p>
+							<ul>
+								<li>
+									<a href="#"><img src="https://delhihighcourt.nic.in/app/public/ois/images/aps.png">
+								</a></li><a href="#">
+								</a><li><a href="#">
+									</a><a href="#"><img src="https://delhihighcourt.nic.in/app/public/ois/images/iso.png"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Important Links Section End -->
+		<!-- Footer Top Section Start -->
+		<div class="footer-top-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-9 col-lg-9 copyright-sec">
+						<div class="footer-nav-sec">
+							<ul>
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/contact-us">Contact us</a>
+								</li>
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/form/feedback">Feedback</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 visitor-sec">
+						<div class="social-media">
+							<p>Follow Us :</p>
+							<ul>
+								<li>
+									<a href="https://www.youtube.com/@delhihighcourt-official4624"><img src="https://delhihighcourt.nic.in/app/public/ois/images/youtube.png"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-9 col-lg-9 copyright-sec">
+						<div class="footer-nav-sec">
+							<ul>
+								
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/privacy-policy">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/copyright-policy">Copyright Policy</a>
+								</li>
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/hyperlinking-policy">Hyperlinking and Framing Policy</a>
+								</li>
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/acessibility-statement">Accessibility Statement</a>
+								</li>
+								<li>
+									<a href="https://delhihighcourt.nic.in/web/help">Help</a>
+								</li>
+							</ul>
+							<p>Copyright © 2024 Content Owned by High Court of Delhi. All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 visitor-sec">
+						<p>Visitors: 207611265</p>
+						<p>Page last updated on: 26-03-2025</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Top Section End -->
+	</footer>
+
+	<a class="scrollToTop" href="#" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+	<!--<script src="https://delhihighcourt.nic.in/app/public/ois/js/jquery-3.3.1.min.js"></script>-->
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/jquery-3.7.1.min.js"></script>
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/bootstrap.bundle.min.js"></script>
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/jquery.easy-ticker.min.js"></script>
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/wow.min.js"></script>
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/owl.carousel.js"></script>
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/custom.js"></script>
+
+
+
+
+    <script src="https://delhihighcourt.nic.in/app/public/backend/js/select2.min.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/backend/js/sweetalert.js"></script>
+	<script src="https://delhihighcourt.nic.in/app/public/ois/js/jquery-3.7.1.min.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/bootstrap-5.3.3.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/sha.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/jquery-ui.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/sweetalert.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/backend/js/jquery.validate.min.js"></script>
+
+    <!-----------------------------DataTable Scripts---------------------->
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/dataTables.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/dataTables.buttons.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/buttons.dataTables.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/jszip.min.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/pdfmake.min.js"></script>
+    <script src="https://delhihighcourt.nic.in/app/public/ois/js/vfs_fonts.js"></script>
+	<script>
+		/* preloader */
+		setTimeout(function () {
+			$('body')
+				.removeClass('loading')
+				.addClass('loaded');
+		}, 2000);
+		/* preloader */
+	</script>
+	  <script type="text/javascript">
+     /*   $(document).ready(function(){
+            $("#from_date").datepicker({
+    			dateFormat: 'dd-mm-yy',
+	            changeMonth: true,
+	            changeYear: true,
+	            yearRange: "-50:-0"
+			});
+            $("#to_date").datepicker({
+    			dateFormat: 'dd-mm-yy',
+	            changeMonth: true,
+	            changeYear: true,
+	            yearRange: "-50:-0"
+			});
+        });*/
+         $(document).ready(function(){
+        // Initialize the from_date datepicker
+        $("#from_date").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "-50:-0",
+            onSelect: function(selectedDate) {
+                var selectedDateObj = $(this).datepicker('getDate');
+                
+                // Set the minimum date for to_date to be the selected from_date
+                $("#to_date").datepicker("option", "minDate", selectedDateObj);
+            }
+        });
+
+        // Initialize the to_date datepicker
+        $("#to_date").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "-50:-0",
+            minDate: 0,  // Disable past dates (before today) by default
+            beforeShowDay: function(date) {
+                // Get the from_date as selected date
+                var fromDate = $("#from_date").datepicker("getDate");
+                
+                // If no from_date is selected, disable all dates before today
+                if (!fromDate) {
+                    var today = new Date();
+                    if (date < today) {
+                        return [false]; // Disable the date
+                    }
+                } else {
+                    // Compare and disable dates before the from_date
+                    if (date < fromDate) {
+                        return [false]; // Disable the date
+                    }
+                }
+                
+                // Allow selecting the date if it's not before from_date
+                return [true]; // Enable the date
+            }
+        });
+    });
+    </script>	
+	 <script>
+        $(document).ready(function()
+        {
+            $( document ).ajaxStart(function()
+            {
+                $('#whole_page_loader').show();
+            });
+
+            $(document).ajaxError(function()
+            {
+                $('#whole_page_loader').hide();
+                //alert("Something went wrong!");
+            });
+
+            $(document).ajaxSuccess(function()
+            {
+                $('#whole_page_loader').hide();
+            });
+
+            // $('.select2').select2();
+        });
+        document.onreadystatechange = function ()
+        {
+            var state = document.readyState
+            if (state == 'interactive')
+            {
+                $('#whole_page_loader').show();
+            } 
+            else if (state == 'complete')
+            {
+                setTimeout(function(){
+                    $('#whole_page_loader').hide();
+                },1000);
+            }
+        }
+    </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Show loader on page load
+    document.getElementById("whole_page_loader").style.display = "block";
+});
+
+window.onload = function() {
+    // Hide loader once page is fully loaded
+    document.getElementById("whole_page_loader").style.display = "none";
+};
+</script>
+
+   
+        <script>
+    // This function is called when the "Play Audio" button is clicked
+    function playAudio() {
+        var code = document.getElementById("randomid").value; // Get the captcha code
+        var audioSrc = "https://delhihighcourt.nic.in/app/storage/app/public/captcha_audios/" + code + ".wav"; // Build the URL
+        var audio = document.getElementById("myAudio");
+        audio.src = audioSrc; // Set the audio source
+        audio.play(); // Play the audio
+    }
+
+    // Function to refresh the captcha image when the refresh button is clicked
+    function refreshCaptcha() {
+        location.reload();
+    }
+</script>
+ 
+
+<script type="text/javascript">
+	$(document).ready(function () 
+	{
+
+
+		$('#reload-captcha').on('click', function() {
+            $.ajax({
+                url: "https://delhihighcourt.nic.in/app/generate-captcha", // Route to generate captcha
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    // Update the captcha code in the label with the new code
+                    $('#captcha-code').text(response.captcha_code);
+
+                    // Update the hidden input 'randomid' with the new captcha code
+                    document.getElementById('randomid').value = response.captcha_code;
+
+                    // Update the audio source dynamically if you want to update it as well
+                    $('#captcha-audio').attr('src', response.audio_url); // Update the audio URL
+                },
+                error: function() {
+                    alert("Error loading captcha.");
+                }
+            });
+        });
+
+
+		
+		// Reload the image CAPTCHA
+		function reloadCaptcha() {
+			$('#captcha-image').attr('src', 'https://delhihighcourt.nic.in/app/getCaptcha?' + Math.random());
+		}
+
+		// Reload CAPTCHA when the refresh icon is clicked
+		$('#reload-captcha').on('click', function () {
+			reloadCaptcha();
+		}); 
+		 
+		  
+	 
+		var table = $('#registrarsTableValue').DataTable({
+			"bJQueryUI": true,
+			"bSort": false,
+			"bPaginate": true,
+			"sPaginationType": "full_numbers",
+			"iDisplayLength": 20
+		});
+
+		// Initialize DataTable for case table with server-side processing
+		var table = $('#caseTable').DataTable({
+			processing: true,
+			serverSide: true,
+			destroy: true,
+			ajax: {
+				url: 'https://delhihighcourt.nic.in/app/get-case-type-status',
+				data: function (d) {
+					d.case_type = $('#case_type').val();
+					d.case_number = $('#case_number').val();
+					d.case_year = $('#case_year').val();
+				},
+			},
+			columns: [
+				{ data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false },
+				{ data: 'ctype', name: 'ctype', orderable: true },
+				{ data: 'pet', name: 'pet', orderable: true },
+				{ data: 'orderdate', name: 'orderdate', orderable: true },
+			],
+			aLengthMenu: [
+				[50, 100, 200, -1],
+				[50, 100, 200, "All"]
+			],
+		});
+
+		// Handle search click event and validate CAPTCHA
+		$('#search').on('click', function (e) {
+			e.preventDefault();
+
+			var case_type = $("#case_type").val();
+			var case_number = $("#case_number").val();
+			var year = $("#case_year").val();
+			var captchaInput = $("#captchaInput").val();
+			
+			// Check for empty fields
+			if (case_type == '') {
+				Swal.fire('Alert', 'Case type field is required', 'warning');
+			}
+			else if (case_number == '') {
+				Swal.fire('Alert', 'Case number field is required', 'warning');
+			}
+			else if (year == '') {
+				Swal.fire('Alert', 'Year field is required', 'warning');
+			} else {
+				// Validate CAPTCHA before submitting the form
+				$.ajax({
+					url: 'https://delhihighcourt.nic.in/app/validateCaptcha',
+					type: 'POST',
+					data: { "_token": "xO3x48zMSzpLo1SfYExTd7Dp8v9UnPGg2ZeTJOzh", "captchaInput": captchaInput },
+					success: function (response) {
+						if (response.success == true) {
+							// CAPTCHA is validated, submit the form
+							table.draw();  // Submit the form (or update the table)
+						} else {
+							Swal.fire('Alert', 'CAPTCHA is incorrect. Please try again.', 'error');
+							reloadCaptcha();  // Reload the image CAPTCHA
+							$("#captchaInput").val("");  // Clear the CAPTCHA input field
+						}
+					},
+					error: function () {
+						Swal.fire('Error', 'CAPTCHA validation failed. Please try again later.', 'error');
+					}
+				});
+			}
+		});
+	});
+</script>
+
+
+
+	 
+
+
+
+
+</body></html>
