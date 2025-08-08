@@ -19,6 +19,8 @@ pip install -r requirements.txt
 Run Django server:
 cd court_backend
 python manage.py runserver
+
+
 2. Frontend (React)
 Install frontend dependencies:
 cd frontend
